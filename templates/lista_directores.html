@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'estilos/direc.css' %}"> </link>
+    <title>Productores</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1>Datos existentes</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class='content'>
+            <section class="cantidad">
+                <span class="cant-directores">Cantidad de productores registrados: {{num_direc_reg}}</span>
+                <br>
+                <span class="cant_peliculas">Cantidad de peliculas registradas: {{num_pelis_reg}}</span>
+            </section>
+            <div class="separator">
+                <span>Directores</span>
+                <span>Peliculas</span>
+            </div>
+            <div class = "vista">
+                <section class="directores">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                            </tr>
+                            {% for c in directores %}
+                            <tr>
+                                <td>{{c.nombre}}</td>
+                                <td>{{c.apellido}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </section>
+    
+                <section class="peliculas">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Pelicula</th>
+                                <th>Descripcion</th>
+                            </tr>
+                            {% for c in peliculas %}
+                            <tr>
+                                <td>{{c.pelicula}}</td>
+                                <td>{{c.descripcion}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <section class="volver">
+                <button>
+                    <a href="{% url 'home' %}">Volver a la página principal</a>
+                </button>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

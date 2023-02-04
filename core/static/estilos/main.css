@@ -1,0 +1,113 @@
+@font-face{
+    font-family: Rr;
+    src: url('../fuentes/Roboto-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: Rli;
+    src: url('../fuentes/Roboto-Light.ttf') format(truetype);
+}
+@font-face {
+    font-family: Rb;
+    src: url('../fuentes/Roboto-Bold.ttf') format(truetype);
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    background-color: darkgreen;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-brand .navbar-item{
+    color: lightgreen;
+    font-family: Rli;
+    font-size: 32px;
+}
+.navbar .navbar-brand .navbar-item span{
+    font-family: Rb;
+    color: white;
+}
+.main-content{
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .contenido{
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .contenido .principal h1{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rr;
+    font-size: 32px;
+    color: white;
+}
+.main-content .contenido .principal h2{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rr;
+    font-size: 26px;
+    color: white;
+}
+.main-content .contenido .principal .anuncio{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rr;
+    font-size: 25px;
+    color: white;
+}
+.main-content .contenido .ingresar{
+    width: 100%;
+    height: 10%;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content .contenido .ingresar a{
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: 60px;
+    padding: 5px;
+    font-family: Rr;
+    font-size: 20px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    color: lightgreen;
+}

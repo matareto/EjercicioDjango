@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'estilos/main.css' %}"> </link>
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{% url 'home' %}">
+                    Primer página con <span>Django</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <article class="contenido">
+            <section class="principal">
+                <h1>App de directores de cine y sus peliculas!</h1>
+                <h2>Recuerda!</h2>
+                <div class="anuncio">
+                    <p>
+                        Para agregrar directores y sus respectivas peliculas debes ingresar al admin de la página con Django. 
+                    </p>
+                </div>
+            </section>
+            <section class="ingresar">
+                    <a href="{% url 'directores:home' %}">Presiona aquí para visualizar los datos!</a>
+            </section>
+
+        </article>
+
+    </main>
+</body>
+</html>

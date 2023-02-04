@@ -1,0 +1,132 @@
+@font-face{
+    font-family: Rr;
+    src: url('../fuentes/Roboto-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: Rli;
+    src: url('../fuentes/Roboto-Light.ttf') format(truetype);
+}
+@font-face {
+    font-family: Rb;
+    src: url('../fuentes/Roboto-Bold.ttf') format(truetype);
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.navbar{
+    display: flex;
+    background-color: darkgreen;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-brand{
+    color: lightgreen;
+    font-family: Rli;
+    font-size: 20px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin-top:5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.main .content .separator{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main .content span{
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rr;
+    font-size: 32px;
+    color: white;
+}
+
+.main .vista{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .vista .directores{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main .vista .peliculas{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main .vista .directores table{
+    width: 20vh;
+    height: 20vh;
+    border-collapse: collapse;
+}
+.main .vista .peliculas table{
+    width: 65%;
+    height: 20vh;
+    border-collapse: collapse;
+}
+
+.main .vista .directores table th,tr{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid lightgreen;
+    font-family: Rli;
+    font-size: 25px;
+}
+.main .vista .peliculas table th,tr{
+    text-align: center;
+    padding: 10px;
+    border: 3px solid lightgreen;
+    font-family: Rli;
+    font-size: 25px;
+}
+.main .vista .peliculas table td{
+    padding: 10px;
+}
+.main .vista .directores table td{
+    padding: 10px;
+}
